@@ -64,10 +64,10 @@
         });
         /* sticky header */
         $(window).scroll(function() {
-            if ($(window).scrollTop() >= 300) {
-                $('#headerWrap').addClass('fixed-header');
+            if ($(window).scrollTop() >= 483.5) {
+                $('body').addClass('sticky_header');
             } else {
-                $('#headerWrap').removeClass('fixed-header');
+                $('body').removeClass('sticky_header');
             }
         });
 

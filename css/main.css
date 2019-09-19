@@ -7,14 +7,8 @@
 }
 /* header */
 
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-}
 .header{
-        position: fixed;
+    position: fixed;
     top: 50%;
     left: 0;
     margin-top: -50px;
@@ -23,57 +17,54 @@
     -webkit-transition: all .6s;
     transition: all .6s;
 }
-.header  .logo_wrap{
-   display: block;
-    float: left;
-    width: 130px;
-    padding: 25px 0;
-    background: #fff;
-    text-align: center;
-    margin-left: 100px;
+.login_wrap{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    margin-top: -50px;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+    background: #333;
+    z-index: 50;
+    width: 100px;
     height: 100px;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    transition: all .6s cubic-bezier(.165,.84,.44,1);
-    position: relative; 
 }
-.header.showmenu  .logo_wrap{
-    background:#333;
-}
-.header .logo_wrap img{
-    height:50px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-}
-.header.showmenu .logo_wrap img.dark{
+#headerWrap #overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: all .6s cubic-bezier(.645,.045,.355,1);
+    transition: all .6s cubic-bezier(.645,.045,.355,1);
 }
-.header.showmenu .logo_wrap img.white{
-    opacity: 1;
-    visibility: visible;
+.sticky_header .header{
+   position: fixed;
+    top: 0;
+    margin-top: 0; 
 }
-.header .logo_wrap img.white{
-        opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+.sticky_header .login_wrap{
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
 }
+
 .header .menu_wrap{
-    position: absolute;
-    top:0;
-    left:0;
-    width:100px;
-    height:100px;
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
     display: block;
     -webkit-transition: background .3s;
     transition: background .3s;
-    background: #333;
+    background:#333;
 }
 .header .menu_wrap:hover,.header.showmenu .menu_wrap{
     background:#3f3f3f;
@@ -123,40 +114,59 @@
     top: 14px;
 }
 
-.login_wrap{
-   position: fixed;
-    top: 50%;
-    right: 0;
-    margin-top: -50px;
-    -webkit-transition: all .6s;
-    transition: all .6s;
-    background: #333;
-    z-index: 50;
-    width: 100px;
-    height: 100px; 
+.header  .logo_wrap{
+       display: block;
+    float: left;
+    width: 130px;
+    padding: 25px 0;
+    background: #fff;
     text-align: center;
-        padding: 35px 0;
+    margin-left: 100px;
+    height: 100px;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition: all .6s cubic-bezier(.165,.84,.44,1);
+    position: relative;
 }
+.header.showmenu  .logo_wrap{
+    background:#333;
+}
+.header .logo_wrap img{
+    height:50px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.header.showmenu .logo_wrap img.dark{
+    opacity: 0;
+    visibility: hidden;
+}
+.header.showmenu .logo_wrap img.white{
+    opacity: 1;
+    visibility: visible;
+}
+.header .logo_wrap img.white{
+        opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 .login_wrap a{
-    display:block;
+    display: block;
+    text-align: center;
+    padding: 33px 0;
 }
 .login_wrap a i{
     font-size: 30px;
     color: #fff;
 }
-#headerWrap #overlay{
-    position: fixed;
-    background: #000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s,background .35s,visibility .35s,height .35s;
-    overflow: hidden;
-}
-#headerWrap #overlay.open{
+
+aderWrap #overlay.open{
      opacity: 1;
      background: #333;
     visibility: visible;
