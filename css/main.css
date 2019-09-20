@@ -225,7 +225,7 @@ section .valence_btn:after{
   bottom: 0;
   height: 3px;
   background: #333;
-    height: 120%;
+    height: 100%;
   left: -10%;
   -webkit-transform: skewX(15deg);
           transform: skewX(15deg);
@@ -419,6 +419,7 @@ section .valence_btn:hover:after{
 #section02 .swiper-slide a .img_box{
     width:100%;
     z-index: 1;
+    opacity: .8;
 }
 #section02 .swiper-slide a .img_box img{
     width:100%;
