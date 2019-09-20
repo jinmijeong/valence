@@ -264,16 +264,16 @@ section .valence_btn:hover:after{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    
+}
+.swiper-container.section_swiper .swiper-slide{
+    width:65%!important;
 }
 .section_swiper .swiper-slide-prev, .section_swiper .swiper-slide-next{
     -webkit-opacity: 0.3; 
     -moz-opacity: 0.3; 
     opacity: 0.2; 
 }
-.swiper-slide-active{
-    width:50%;
-}
-
 /* section01 */
 #section01 .main_video{
     height:100vh;
@@ -380,7 +380,7 @@ section .valence_btn:hover:after{
     position: relative;
 }
 .section .section_tit h2:after{
-        content: '';
+    content: '';
     position: absolute;
     width: 30px;
     height: 3px;
@@ -399,7 +399,7 @@ section .valence_btn:hover:after{
     width: 0;
     height: 100%;
     top: 0;
-    left: 0;
+    left: -1px;
     background: #f8f8f8;
     z-index: 2;
     position: absolute;
@@ -408,13 +408,13 @@ section .valence_btn:hover:after{
 }
 #section02 .swiper-slide .stripe.right{
        left: auto;
-    right: 0; 
+    right: -1px; 
 }
 #section02 .swiper-slide.swiper-slide-active .stripe{
-        width: 150px;
+        width: 200px;
 }
 #section02 .swiper-slide.swiper-slide-active .stripe.right{
-    width:50px;
+    width:100px;
 }
 #section02 .swiper-slide a .img_box{
     width:100%;
@@ -426,10 +426,11 @@ section .valence_btn:hover:after{
 #section02 .swiper-slide a .text_box{
     position:absolute;
    left: 60px;
-    top:20%;
+    top:30%;
     text-align: left;
         z-index: 3;
 }
+
 #section02 .swiper-slide a .text_box h3{
      color:#333;
     opacity: 0;
