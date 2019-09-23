@@ -97,6 +97,7 @@
 #header_sticky {
             position: absolute;
             top: 45%;
+        z-index:6;
         }
 
         #header_sticky .menu_container {
