@@ -546,7 +546,7 @@ section .valence_btn:hover:after {
 #section04 {
     height: 100%;
     background: #f8f8f8;
-    padding: 100px 0;
+    padding: 60px 0 100px;
 }
 
 .section .section_tit {
