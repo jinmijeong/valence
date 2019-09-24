@@ -124,7 +124,6 @@
                     <i class="material-icons">input</i>
                 </a>
             </div>
-
             <nav id="overlay02" class="overlay">
 
             </nav>
@@ -426,10 +425,23 @@
                     $('#header_sticky, .login_wrap').css({
                         "transition": "top 0.4s"
                     });
-                    $('body').addClass('openMenu');
+                    $('body').addClass('openMenu1');
                     openMenu = true;
                 } else {
-                    $('body').removeClass('openMenu');
+                    $('body').removeClass('openMenu1');
+                    openMenu = false;
+                }
+                return false;
+            });
+            $('.login_wrap').click(function() {
+                if (openMenu == false) {
+                    $('#header_sticky, .login_wrap').css({
+                        "transition": "top 0.4s"
+                    });
+                    $('body').addClass('openMenu2');
+                    openMenu = true;
+                } else {
+                    $('body').removeClass('openMenu2');
                     openMenu = false;
                 }
                 return false;
