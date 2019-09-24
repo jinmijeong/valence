@@ -14,27 +14,27 @@
 }
 
 .slide_right {
-    -webkit-animation: slideRight 0.8s both;
-    -moz-animation: slideRight 0.8s both;
-    -ms-animation: slideRight 0.8s both;
-    -o-animation: slideRight 0.8s both;
-    animation: slideRight 0.8s both;
+    -webkit-animation: slideRight .8s cubic-bezier(.77,0,.175,1) both ;
+    -moz-animation: slideRight .8s cubic-bezier(.77,0,.175,1) both ;
+    -ms-animation: slideRight .8s cubic-bezier(.77,0,.175,1) both ;
+    -o-animation: slideRight .8s cubic-bezier(.77,0,.175,1) both ;
+    animation: slideRight .8s cubic-bezier(.77,0,.175,1) both ;
 }
 
 .slide_left {
-    -webkit-animation: slideLeft 0.8s both;
-    -moz-animation: slideLeft 0.8s both;
-    -ms-animation: slideLeft 0.8s both;
-    -o-animation: slideLeft 0.8s both;
-    animation: slideLeft 0.8s both;
+    -webkit-animation: slideLeft .8s cubic-bezier(.77,0,.175,1) both ;
+    -moz-animation: slideLeft .8s cubic-bezier(.77,0,.175,1) both ;
+    -ms-animation: slideLeft .8s cubic-bezier(.77,0,.175,1) both ;
+    -o-animation: slideLeft .8s cubic-bezier(.77,0,.175,1) both ;
+    animation: slideLeft .8s cubic-bezier(.77,0,.175,1) both ;
 }
 
 .slide_up {
-    -webkit-animation: slideUp 0.8s both;
-    -moz-animation: slideUp 0.8s both;
-    -ms-animation: slideUp 0.8s both;
-    -o-animation: slideUp 0.8s both;
-    animation: slideUp 0.8s both;
+    -webkit-animation: slideUp .8s cubic-bezier(.77,0,.175,1) both ;
+    -moz-animation: slideUp .8s cubic-bezier(.77,0,.175,1) both ;
+    -ms-animation: slideUp .8s cubic-bezier(.77,0,.175,1) both ;
+    -o-animation: slideUp .8s cubic-bezier(.77,0,.175,1) both ;
+    animation: slideUp .8s cubic-bezier(.77,0,.175,1) both ;
 }
 
 @keyframes slideRight {
