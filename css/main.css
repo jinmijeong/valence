@@ -4,10 +4,6 @@
     min-width: 950px;
 }
 
-.menu_open {
-    overflow-y: hidden;
-}
-
 /* animation */
 .scroll {
     opacity: 0;
@@ -372,7 +368,7 @@ section .text_box p {
 section .valence_btn {
     margin: 10px;
     padding: 10px 40px;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -380,6 +376,7 @@ section .valence_btn {
     transition: .3s;
     display: inline-block;
     font-weight: 600;
+    color:#fff;
 }
 
 section .valence_btn:after {
@@ -390,7 +387,7 @@ section .valence_btn:after {
     left: 50%;
     bottom: 0;
     height: 3px;
-    background: #333;
+    background: #fff;
     height: 100%;
     left: -10%;
     -webkit-transform: skewX(15deg);
@@ -399,7 +396,7 @@ section .valence_btn:after {
 }
 
 section .valence_btn:hover {
-    color: #fff;
+    color: #324156;
 }
 
 section .valence_btn:hover:after {
@@ -679,6 +676,7 @@ section .valence_btn:hover:after {
     width: 50%;
     flex-grow: 1;
     position: relative;
+    background: #324156;
 }
 
 .about_contents .img_wrap {
@@ -692,18 +690,20 @@ section .valence_btn:hover:after {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    color:#fff;
 }
 
 .about_contents .text_box h3 {
     font-size: 60px;
     position: relative;
+    color:#fff;
 }
 
 .about_contents .text_box h3:after {
     content: '';
     width: 40%;
     height: 1px;
-    background: #333;
+    background: #fff;
     position: absolute;
     bottom: -50px;
     left: 50%;
@@ -745,7 +745,7 @@ section .valence_btn:hover:after {
     color: #999;
     position: relative;
     z-index: 2;
-    background: #3f3f3f;
+    background: #404c61;
     animation-fill-mode: forwards;
 }
 
@@ -758,7 +758,7 @@ section .valence_btn:hover:after {
 }
 
 .collection_list .item .col_tit {
-    background: #333;
+    background: #324156;
     position: relative;
     z-index: 5;
 }
@@ -772,7 +772,7 @@ section .valence_btn:hover:after {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-left-color: #333;
+    border-left-color: #324156;
     border-top-color: transparent;
     border-width: 10px;
     margin-top: -10px;
